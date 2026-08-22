@@ -1,0 +1,4 @@
+# Only logs are ignored here on purpose.
+# Note this does NOT cover node_modules, .env, or caches -
+# that is the .dockerignore's job, which this app is missing.
+*.log
