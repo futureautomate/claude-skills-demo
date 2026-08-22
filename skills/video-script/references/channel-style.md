@@ -1,13 +1,12 @@
 # Future Automation - channel style notes
 
 Read this when writing spoken lines, titles, or thumbnail concepts for the
-channel. Everything here is a first pass; items marked ASSUMPTION need
-Tejas's confirmation.
+channel. Confirmed by Tejas.
 
 ## Voice
 
 - First person, present tense, talking to one viewer ("you"), not an
-  audience. <!-- ASSUMPTION: confirm with Tejas -->
+  audience.
 - Short sentences. Every sentence in the hook earns the next one.
 - Enthusiastic about the build, honest about failures - if a step usually
   goes wrong, say so on camera; it builds trust and retention.
@@ -24,7 +23,7 @@ The hook shows the finished build working, then makes one promise:
   fails."
 
 Pattern: result on screen in the first five seconds, cost/time/difficulty
-twist in the next ten. <!-- ASSUMPTION: confirm hook pattern with Tejas -->
+twist in the next ten.
 
 ## Titles
 
@@ -38,7 +37,6 @@ twist in the next ten. <!-- ASSUMPTION: confirm hook pattern with Tejas -->
 - One focal object (the build), high contrast, minimal background clutter.
 - At most three words of text, never repeating the title.
 - Tejas's face reacting is optional, the build is mandatory.
-  <!-- ASSUMPTION: confirm with Tejas -->
 
 ## Things to avoid
 
@@ -46,4 +44,3 @@ twist in the next ten. <!-- ASSUMPTION: confirm hook pattern with Tejas -->
 - Generic part names where a real model number exists.
 - More than one CTA. One subscribe ask, one end-card pointer.
 - Filler intros ("hey guys, welcome back") before the hook.
-  <!-- ASSUMPTION: confirm intro style with Tejas -->

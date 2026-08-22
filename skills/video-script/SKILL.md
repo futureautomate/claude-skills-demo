@@ -29,23 +29,18 @@ file.
 
 Produce one Markdown script with these sections, in this order:
 
-<!-- ASSUMPTION: confirm section order with Tejas -->
 1. **Hook** - the first 20 seconds. Show or promise the finished result and
    the one reason to keep watching. No channel intro before the hook.
-   <!-- ASSUMPTION: confirm hook length and job with Tejas -->
 2. **What we're building** - two or three sentences framing the project and
    who it is for.
 3. **Parts list** - a Markdown table: Part, Spec/Model, Qty, Notes.
-   <!-- ASSUMPTION: confirm parts-list format with Tejas -->
 4. **Build narrative** - the build in shooting order, numbered steps. Each
    step gives: what Tejas says (spoken lines), what the camera shows, and
    b-roll or on-screen-text notes inline under the step.
-   <!-- ASSUMPTION: confirm b-roll notes inline vs separate column -->
 5. **The reveal** - the working result demonstrated, calling back to the
    hook's promise.
 6. **Outro and CTA** - one CTA only: subscribe plus a pointer to a related
    video for the end card.
-   <!-- ASSUMPTION: confirm standard CTA wording and end-card behaviour -->
 
 Mark every spoken line as speech, and every direction as a bracketed note,
 so the script reads cleanly off a teleprompter.
