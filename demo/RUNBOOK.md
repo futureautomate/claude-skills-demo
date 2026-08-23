@@ -17,6 +17,11 @@ dir "$HOME\.claude\skills\dockerize"         # skill installed?
 dir "$HOME\.claude\skills\video-script"
 ```
 
+- [ ] Rehearse step 4 once the day before and answer "don't ask again" to
+      the docker prompts, so the live run has fewer interruptions
+- [ ] ~50 other skills are installed in `~/.claude/skills`; the demo skills
+      triggered fine alongside them in testing, but parking unrelated ones
+      for the day shortens the list the model reads (optional)
 - [ ] Terminal font size raised, notifications off, Do Not Disturb on
 - [ ] `demo/baseline-outputs/` both files open in editor tabs (fallback)
 - [ ] Nothing listening on port 3000
@@ -57,6 +62,22 @@ Move-Item "$HOME\.claude\skills-parked\dockerize" "$HOME\.claude\skills\dockeriz
    Dockerfile + .dockerignore written, `docker build -t sgu-demo-api:demo`,
    run on port 3000, summary bullets, and a finding about the `.env` file.
    Build takes ~20 s with images pre-pulled.
+
+   **Prompts to expect (tested 2026-08-23):** when the skill auto-triggers
+   from a natural prompt, Claude Code asks once to run the skill, then
+   once each for `docker build` and `docker run` - answer yes (pick
+   "don't ask again" on the docker ones). The skill's `allowed-tools`
+   pre-approval only kicks in when YOU invoke it by name. So there are two
+   ways to run step 4, pick one before the talk:
+
+   - *Natural prompt* (shows description-based triggering, the point of
+     the file tour) - expect the three prompts above; narrate them as
+     "the agent asks before it touches Docker".
+   - *Slash invocation* - type `/dockerize` followed by the same sentence.
+     Zero prompts; docker runs straight through. Use this if you want the
+     build to just go.
+
+   Both were tested end-to-end; the files produced are identical.
 5. **Show it running:**
 
    ```powershell
@@ -80,8 +101,11 @@ Move-Item "$HOME\.claude\skills-parked\dockerize" "$HOME\.claude\skills\dockeriz
 Run between takes or after a failed attempt (from the repo root's parent):
 
 ```powershell
-git -C claude-skills-demo checkout -- sample-app; git -C claude-skills-demo clean -fd sample-app; docker rm -f sgu-demo-api 2>$null; docker rmi -f sgu-demo-api:demo 2>$null
+git -C claude-skills-demo checkout -- sample-app; git -C claude-skills-demo clean -fd -e .claude sample-app; docker rm -f sgu-demo-api 2>$null; docker rmi -f sgu-demo-api:demo 2>$null
 ```
+
+(`-e .claude` keeps any "don't ask again" permission answers you saved
+during rehearsal - they live in `sample-app/.claude/settings.local.json`.)
 
 ## If the build fails live
 

@@ -5,6 +5,9 @@ allowed-tools:
   - Bash(docker build:*)
   - Bash(docker run:*)
   - Bash(docker ps:*)
+  - PowerShell(docker build:*)
+  - PowerShell(docker run:*)
+  - PowerShell(docker ps:*)
 ---
 
 # Dockerize
