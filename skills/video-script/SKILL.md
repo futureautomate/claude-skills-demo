@@ -54,6 +54,13 @@ After the script, under a horizontal rule, always add:
 - **One thumbnail concept** - a text description only: composition, focal
   object, max three words of thumbnail text. Never generate an image.
 
+## Channel voice
+
+Spoken-line voice, hook patterns that fit the channel, title formulas, and
+thumbnail rules live in
+[references/channel-style.md](references/channel-style.md). Read it before
+writing the hook, the spoken lines, or the packaging block.
+
 ## When details are missing
 
 If the idea is too thin to script (no clear finished result, no idea what
